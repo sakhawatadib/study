@@ -7,3 +7,4 @@
 2. [গ্রাফ কী এবং কেন ?](Graph_Algorithm/2._Intro_to_graph.md)
 3. [গ্রাফের হাত পা মাথা](Graph_Algorithm/3._graph_components.md)
 4. [গ্রাফের হাত পা মাথা - ২](Graph_Algorithm/4._graph_components_2.md)
+5. [বিশেষ ধরনের গ্রাফ](Graph_Algorithm/5._graph_types.md)
