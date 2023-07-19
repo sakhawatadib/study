@@ -1,0 +1,24 @@
+name: Run Python script on push
+
+on:
+  push:
+    branches:
+      - main  # Replace 'main' with the name of your default branch
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace '3.x' with the desired Python version (e.g., '3.8')
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # If you have any dependencies in requirements.txt, otherwise, skip this line
+
+      - name: Run Python script
+        run: python list_folders.py
