@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: '3.x'  # Replace '3.x' with the desired Python version (e.g., '3.8')
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt  # If you have any dependencies in requirements.txt, otherwise, skip this line
-
       - name: Run Python script
-        run: python list_folders.py
+        run: |
+          python list_folders.py
+        env:
+          DEBUG: "true"
